@@ -1,0 +1,37 @@
+
+
+
+ 
+CREATE PROCEDURE dbo.uspGetAddress @City nvarchar(30)
+AS
+SELECT * 
+FROM Person.Address
+WHERE City = @City
+GO
+
+EXEC dbo.uspGetAddress @City = 'New York'
+
+
+
+
+exec tsqlt.newTestClass 'TestClass1Class'
+exec tsqlt.runAll
+exec tsqlt.run 'TestClass1Class'
+
+
+
+drop procedure testcaseclass.testissalaryvalid 
+
+
+
+add new column
+
+	ALTER TABLE Customers ADD Email varchar(255);
+	ALTER TABLE YourTable ADD Bar INT NOT NULL DEFAULT(0)
+set 0 for all 
+	UPDATE employees SET lastname = 'Hill'
+
+update set to 1 for one 
+	UPDATE table SET column1 = new_value1
+	WHERE
+	condition;
